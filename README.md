@@ -33,7 +33,7 @@ composer require brightnucleus/country-codes
 
 On each `composer install` or `composer update`, a check will be made to see whether there's a new version of the database available. If there is, that new version is downloaded.
 
-Usage is pretty-straight-forward. Just use one of the wto provided static methods:
+Usage is pretty straight-forward. Just use one of the two provided static methods:
 
 ```PHP
 <?php

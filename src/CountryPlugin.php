@@ -4,7 +4,7 @@
  *
  * @package   BrightNucleus\CountryCodes
  * @author    Alain Schlesser <alain.schlesser@gmail.com>
- * @license   GPL-2.0+
+ * @license   MIT
  * @link      http://www.brightnucleus.com/
  * @copyright 2016 Alain Schlesser, Bright Nucleus
  */
@@ -67,7 +67,13 @@ class CountryPlugin implements PluginInterface, EventSubscriberInterface
         $io->write('Removing CSV file...', true);
         self::removeFile($dbFilename . '.csv');
 
-        $io->write('The country codes database has been updated.', true);
+        $io->write(
+            sprintf(
+                'The country codes database has been updated (%1$s).',
+                $dbFilename . '.php'
+            ),
+            true
+        );
     }
 
     /**

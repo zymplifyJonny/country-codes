@@ -11,7 +11,7 @@
 
 namespace BrightNucleus\CountryCodes;
 
-use BrightNucleus\Config\Config;
+use BrightNucleus\Config\ConfigFactory;
 use BrightNucleus\Config\ConfigInterface;
 
 /**
@@ -108,7 +108,7 @@ class Country
     protected static function initData()
     {
         if (! self::$data) {
-            self::$data = new Config(self::getLocation() . '.php');
+            self::$data = ConfigFactory::create(self::getLocation() . '.php');
         }
 
         return self::$data;

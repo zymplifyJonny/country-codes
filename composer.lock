@@ -4,91 +4,31 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8332bba79d198385d15bb94954d6d8dd",
-    "content-hash": "c50f40291ec7cebf8449991c6735a9d4",
+    "hash": "d1e5cda770277a2704aa3fd3fc419d73",
+    "content-hash": "035401ea55b93c805c8bd50fb798b1ae",
     "packages": [
         {
-            "name": "beberlei/assert",
-            "version": "v2.6.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/beberlei/assert.git",
-                "reference": "51e9d654481fc00c8a376641c390ec4e35d8c1fc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/beberlei/assert/zipball/51e9d654481fc00c8a376641c390ec4e35d8c1fc",
-                "reference": "51e9d654481fc00c8a376641c390ec4e35d8c1fc",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "@stable"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.5-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Assert": "lib/"
-                },
-                "files": [
-                    "lib/Assert/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de",
-                    "role": "Lead Developer"
-                },
-                {
-                    "name": "Richard Quadling",
-                    "email": "rquadling@gmail.com",
-                    "role": "Collaborator"
-                }
-            ],
-            "description": "Thin assertion library for input validation in business models.",
-            "keywords": [
-                "assert",
-                "assertion",
-                "validation"
-            ],
-            "time": "2016-07-28 19:35:30"
-        },
-        {
             "name": "brightnucleus/config",
-            "version": "v0.2.8",
+            "version": "v0.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brightnucleus/config.git",
-                "reference": "9a486a81e89eed0f9afd78e8c0ee486ca6fdbfb7"
+                "reference": "c15e27d302e4025e454252858462a1ba2a6ed5f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brightnucleus/config/zipball/9a486a81e89eed0f9afd78e8c0ee486ca6fdbfb7",
-                "reference": "9a486a81e89eed0f9afd78e8c0ee486ca6fdbfb7",
+                "url": "https://api.github.com/repos/brightnucleus/config/zipball/c15e27d302e4025e454252858462a1ba2a6ed5f6",
+                "reference": "c15e27d302e4025e454252858462a1ba2a6ed5f6",
                 "shasum": ""
             },
             "require": {
-                "beberlei/assert": "^2.5",
-                "brightnucleus/exceptions": "^0.2",
-                "symfony/options-resolver": ">2.8"
+                "brightnucleus/exceptions": ">=0.2",
+                "symfony/options-resolver": ">=2.8"
             },
             "require-dev": {
+                "mikey179/vfsstream": "^1.6",
                 "php-composter/php-composter-phpcs-psr2": "^0.2.0",
-                "phpunit/phpunit": "~4",
-                "squizlabs/php_codesniffer": "~2.5"
+                "phpunit/phpunit": "~4"
             },
             "type": "library",
             "autoload": {
@@ -98,7 +38,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "MIT"
             ],
             "authors": [
                 {
@@ -107,7 +47,7 @@
                 }
             ],
             "description": "Minimal, reusable Config component.",
-            "time": "2016-03-28 05:48:04"
+            "time": "2016-07-22 13:10:05"
         },
         {
             "name": "brightnucleus/exceptions",

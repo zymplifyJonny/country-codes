@@ -13,6 +13,8 @@ namespace BrightNucleus\CountryCodes;
 
 use BrightNucleus\Config\ConfigFactory;
 use BrightNucleus\Config\ConfigInterface;
+use BrightNucleus\CountryCodes\Exception\InvalidCountryCode;
+use BrightNucleus\CountryCodes\Exception\InvalidCountryName;
 
 /**
  * Class Country.
@@ -70,9 +72,14 @@ class Country
      * @param string $fallback Optional. Name of the country to return if the code was not found. Defaults to 'United
      *                         States'.
      * @return string English name of the country.
+     * @throws InvalidCountryCode If the provided country code is not valid.
      */
     public static function getNameFromCode($code, $fallback = 'United States')
     {
+        if (! is_string($code) || empty($code)) {
+            throw InvalidCountryCode::fromCode($code);
+        }
+
         $data = self::initData();
         if (! $data->hasKey('codes', $code)) {
             return $fallback;
@@ -89,9 +96,14 @@ class Country
      * @param string $name     English name of the country to query.
      * @param string $fallback Optional. ISO 3166 code to return if the code was not found. Defaults to 'US'.
      * @return string ISO 3166 code of the country.
+     * @throws InvalidCountryName If the provided country name is not valid.
      */
     public static function getCodeFromName($name, $fallback = 'US')
     {
+        if (! is_string($name) || empty($name)) {
+            throw InvalidCountryName::fromName($name);
+        }
+
         $data = self::initData();
         if (! $data->hasKey('countries', $name)) {
             return $fallback;

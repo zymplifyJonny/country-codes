@@ -49,7 +49,7 @@ class Country
      */
     public static function getLocation($array = false)
     {
-        $folder   = realpath(__DIR__ . '/../') . '/' . self::DB_FOLDER;
+        $folder   = dirname( __DIR__ ) . '/' . self::DB_FOLDER;
         $filepath = $folder . '/' . self::DB_FILENAME;
         if (! $array) {
             return $filepath;

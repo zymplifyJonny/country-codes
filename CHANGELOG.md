@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.3.2] - 2021-06-04
+### Fixed
+- Fix the URL to the CSV file. Props [@Arjunmrt31](https://github.com/Arjunmrt31)
+
 ## [0.3.1] - 2018-02-02
 ### Changed
 - Use HTTPS URL instead of HTTP. Props [@thedotedge](https://github.com/thedotedge)
@@ -43,6 +47,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Initial release to GitHub.
 
+[0.3.2]: https://github.com/brightnucleus/country-codes/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/brightnucleus/country-codes/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/brightnucleus/country-codes/compare/v0.2.1...v0.3.0
 [0.2.1]: https://github.com/brightnucleus/country-codes/compare/v0.2.0...v0.2.1
